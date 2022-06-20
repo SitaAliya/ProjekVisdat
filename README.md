@@ -66,9 +66,9 @@ Variabel ini akan divisualisasikan dengan menggunakan *line chart*
    ```
    Hal tersebut sangat tidak diinginkan. Oleh karena itu, agar tidak muncul seperti itu, pada tab `Marks` pilih `Tooltip` lalu ganti tulisan "Year od Bulan Tahun" menjadi "Tahun" dan "Avg.Jumlah Instrumen" menjadi "Jumlah Instrumen".
 6. Karena pada visualisasi nilai rata-rata jumlah instrumen uang elektronik per-tahun sudah terlihat pada grafik, maka `Axis y` tidak dibutuhkan, lalu `Grid lines` juga tidak diperlukan. Untuk menghilangkan `Axis y` bisa dengan klik kanan pada `Axis y`, lalu pilih tab `Tick Marks`, pada pilihan `Major Tick Marks` pilih `None`. Untuk menghilangkan `Grid lines` bisa dengan klik kanan pada background grafik, lalu pilih `Format`, setelah itu akan muncul tab `Format Lines`, pada `Grid Lines` pilih `None`. Hal ini dilakukan pada `Rows` dan `Columns`.
-7. Jika sudah selesai maka ganti `Title` menjadi "Jumlah Instrumen".
+7. Jika sudah selesai maka ganti `Title` menjadi "Jumlah Instrumen".    
 Hasilnya menjadi seperti ini   
-ggggggg   
+gggggg   
 
 #### Jumlah Instrumen Berdasarkan Media Penyimpan dan Pencatatan Data
 Variabel-variabel ini akan divisualisasikan dengan menggunakan *bar chart*.
@@ -79,9 +79,9 @@ Variabel-variabel ini akan divisualisasikan dengan menggunakan *bar chart*.
 5. Lalu, memunculkan nilai pada setiap bar seperti sebelumnya, pada `Label` di tab `Marks`.
 6. Melakukan setting ulang nilai yang terlihat ketika grafik di *hover*. Caranya sama seperti sebelumnya dengan mengedit tulisan pada `Tooltip`.
 7. Menghilangkan `Axis y` dan `Grid Lines`.
-8. Ubah `Title` menjadi "Rata-Rata Jumlah Instrumen Berdasarkan Media Penyimpanan dan Pencatatan Data".
+8. Ubah `Title` menjadi "Rata-Rata Jumlah Instrumen Berdasarkan Media Penyimpanan dan Pencatatan Data".    
 Hasilnya menjadi seperti ini   
-gggggggg
+![perbandingan-instrumen](image-procedure/perb-instrumen.png)
 
 ### Penerbit
 Variabel ini akan divisualisasikan menggunakan *line chart*, bedanya dengan visualisasi variabel Jumlah Instrumen adalah, pada variabel ini akan ada *dual line chart* dari sub-variabel penerbit uang elektronik dari Bank Umum dan Lembaga Selain Bank/LSB.
@@ -91,9 +91,9 @@ Variabel ini akan divisualisasikan menggunakan *line chart*, bedanya dengan visu
 4. Lalu, memunculkan nilai pada grafik. Sama seperti sebelumnya, namun pada grafik ini hanya ingin ditunjukkan nilai minimal dan maksimal dari kedua grafik tersebut. Pada `Marks`, akan ada 3 tab, yaitu `All`, `AVG(Bank Umum)`, dan `AVG(Lembaga Selain Bank)`. Pada kasus ini pilih `All` agar semua setting-an dapat langsung teraplikasikan baik di *line chart* bank Umum maupun Lembaga Selain Bank. Pada `Label` di `Marks to Label` pilih `Min/Max` untuk memunculkan nilai minimum dan maksimum dari keseluruhan data. Juga memberi checklist pada `Show mark labels`.
 5. Melakukan setting ulang nilai yang terlihat ketika grafik di *hover*.
 6. Menghilangkan `Axis y` dan `Grid Lines`.
-7. Ubah `Title` menjadi "Penerbit EMoney".
+7. Ubah `Title` menjadi "Penerbit EMoney".    
 Hasilnya menjadi seperti ini.    
-ggggggggg    
+![penerbit](image-procedure/penerbit.png)     
 
 ### Transaksi
 #### Volume Transaksi
@@ -105,7 +105,7 @@ Pada variabel ini akan dilakukan dua visualisasi, yaitu treemap dan *area chart*
 5. Nama-nama yang muncul pada treemap masih belum sesuai, jadi pada variabel Measure Names yang sudah di drop ke `Label`, klik variabel tersebut lalu pilih `Edit Aliases`. Lalu akan muncul tab yang berisi tabel nama variabel nama alias yang akan dimunculkan di grafik. Ganti nama alias agar nama yang muncul pada treemap tidak terlalu panjang namun tetap informatif. Contohnya pada variabel Volume Transaksi Belanja, nama alias diubah menjadi "Volume Belanja", kalau secara *default*, nama alias akan sama dengan nama variabel.
 6. Ubah `Title` menjadi "Volume Transaksi (Ribu Transaksi)".
 Hasilnya akan menjadi seperti ini.    
-gggggggggg  
+![v-treemap](image-procedure/volume-treemap.png)  
 
 #### Nilai Transaksi
 Pada variabel ini akan dilakukan visualisasi treemap dan *line chart*. Pada bagian ini akan dijelaskan pembuatan treemap terlebih dahulu.
@@ -116,7 +116,7 @@ Pada variabel ini akan dilakukan visualisasi treemap dan *line chart*. Pada bagi
 5. Pada langkah ini juga dilakukan `Edit Aliases`. Contohnya pada variabel Nilai Transaksi Belanja secara *default* alias nya juga akan bernama Nilai Transaksi Belanja. Jadi aliasnya agar lebih singkat diganti menjadi "Nilai Belanja".
 6. Ubah `Title` menjadi "Nilai Transaksi (Milliar Rp)".
 Hasilnya akan menjadi seperti ini.   
-gggggggg  
+![n-treemap](image-procedure/nilai-treemap.png)    
 
 #### Volume dan Nilai Transaksi
 Karena kedua variabel ini memiliki jumlah variabel yang sama dan nama transaksi yang sama, maka dibuat *dual chart* pada gabungan variabel volume dan nilai. variabel Volume Transaksi menggunakan *area chart* dan Nilai Transaksi menggunakan *line chart*.
@@ -127,13 +127,13 @@ Karena kedua variabel ini memiliki jumlah variabel yang sama dan nama transaksi 
 5. Melakukan setting ulang nilai yang terlihat ketika grafik di *hover*.
 6. Menghilangkan `Axis y` dan `Grid Lines`.
 7. Ubah `Title` menjadi "Volume dan Nilai Transaksi Belanja".
-8. Lakukan hal yang sama pada variabel Volume dan Nilai Transaksi *Initial*, Transfer Antar uang Elektronik, *Reload/Top Up*, Tarik Tunai Uang Elektronik, dan *Redeem*.
+8. Lakukan hal yang sama pada variabel Volume dan Nilai Transaksi *Initial*, Transfer Antar uang Elektronik, *Reload/Top Up*, Tarik Tunai Uang Elektronik, dan *Redeem*.    
 Hasilnya menjadi seperti ini.    
-ggggggggg
+![volume-nilai](image-procedure/volume-nilai.png)
 
 ## Penyusunan Dashboard
-Penyusunan dashboard ini ada beberapa visualisasi yang dijadikan ke satu container dan dibuat suatu parameter untuk memilih visualisasi apa yang perlu ditampilkan. Pertama-tama adalah membuat setting-an dashboard pada Tableau seperti ini dan beri nama dashboard, yaitu "Dashboard Visualisasi Pada Statistik Sistem Uang Elektronik Data: Bank Indonesia"  
-ggggggg
+Penyusunan dashboard ini ada beberapa visualisasi yang dijadikan ke satu container dan dibuat suatu parameter untuk memilih visualisasi apa yang perlu ditampilkan. Pertama-tama adalah membuat setting-an dashboard pada Tableau seperti ini dan beri nama dashboard, yaitu "Dashboard Visualisasi Pada Statistik Sistem Uang Elektronik Data: Bank Indonesia". Berikut gambar untuk setting dashboard.  
+![setting](image-procedure/setting-dashboard.png)
 
 ### Jumlah Instrumen dan Penerbit
 Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
@@ -144,18 +144,18 @@ Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
    Allowable values: List
    ```
    Lalu pada `List of values` tulis `Jumlah Instrumen` dan `Penerbit EMoney`. Lalu klik `OK`. Seperti pada gambar berikut.    
-   ggggggg    
+   ![pilih](image-procedure/parameter-pilih.png)    
 2. Pada drop down di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Selected` lalu tulis syntax berikut
    ```
    [Pilih]
    ```
    Dimana [Pilih] adalah nama parameter yang sudah dibuat sebelumnya. Lalu klik `OK`. Seperti gambar berikut.    
-   gggggggg     
+   ![calc](image-procedure/calc-field-pilih.png)     
 3. Lalu drag-and-drop field Selected tersebut ke tab `Filter` baik di `Sheet` Jumlah Instrumen maupun Penerbit EMoney. pada `Sheet` Jumlah Instrumen ketika field Selected di drop ke tab `Filter` akan muncul tab `Edit Filter`. Setelah itu beri checklist pada value yang sesua dengan sheet-nya, dalam kasus ini berarti beli checklist pada value "Jumlah Instrumen". Lakukan hal yang sama pada `Sheet` Penerbit EMoney, yang di checklist adalah value "Penerbit EMoney".
 4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop `sheet` Jumlah Instrumen dan Penerbit EMoney. Agar grafik terlihat, pilih hide title pada grafik.
 5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pili parameter `Pilih`. Lalu pilih `Legends` untuk menampilkan legenda pada visualisasi Variabel Penerbit.
 Hasilnya akan seperti ini.     
-ggggggg     ggggggg     
+![param-perb](image-procedure/param-penerbit.png)     ggggggg     
 
 #### Jumlah Instrumen Berdasarkan Media Penyimpan dan Pencatatan Data
 Drag-and-drop visualisasi ini ke posisi yang diinginkan, yaitu pada kasus ini akan diletakkan di samping visualisasi Jumlah Instrumen dan Penerbit.
@@ -165,7 +165,7 @@ Treemap dari kedua variabel ini akan disandingkan untuk melihat perbedaan volume
 1. Drag-and-drop `Sheet` dari visualisasi treemap Volume dan Nilai transaksi. Atur ukuran dan diletakkan sebisa mungkin sejajar.
 2. Pada pilihan drop down di kedua grafik tersebut pilih `Legends` dan pilih `Filter` lalu pilih `Year of Bulan Tahun`. Kedua legenda dan filter tersebut diposisikan agar tidak saling tertukar.
 Hasilnya akan seperti ini    
-ggggggg   
+![v-n-treemap](image-procedure/treemap-volume-nilai.png)   
 
 #### Volume dan Nilai Transaksi *Area Chart* dan *Line Chart*
 Visualisasi dari Variabel Volume dan Nilai untuk setiap transaksi akan dijadikan satu.
@@ -176,7 +176,7 @@ Visualisasi dari Variabel Volume dan Nilai untuk setiap transaksi akan dijadikan
    Allowable values: List
    ```
    Lalu pada `List of values` tulis `Initial (pengisian pertama kali)`, `Redeem`, `Reload/Top Up`, `Tarik Tunai`, `Transfer Antar EMoney`, dan `Belanja`. Lalu klik `OK`. Seperti pada gambar berikut.    
-   ggggggg    
+   ![param-trans](image-procedure/parameter-transaksi.png)    
 2. Pada drop down di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Transaction` lalu tulis syntax berikut
    ```
    [Pilih Transaksi]
@@ -186,9 +186,9 @@ Visualisasi dari Variabel Volume dan Nilai untuk setiap transaksi akan dijadikan
 4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop seluruh `Sheet` visualisasi transaksi. Agar grafik terlihat, pilih hide title pada grafik.
 5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pilih parameter `Pilih Transaksi`. Lalu pilih `Legends` untuk menampilkan legenda pada tiap visualisasi transaksi.
 Hasilnya akan seperti ini.     
-ggggggg     ggggggg     gggggg
-ggggggg     ggggggg     gggggg
+![trans-1](image-procedure/param-belanja.png) ![trans-2](image-procedure/param-initial.png) ![trans-3](image-procedure/param-redeem.png)
+![trans-4](image-procedure/param-reload.png) ![trans-5](image-procedure/param-tarik.png) ![trans-6](image-procedure/param-transfer.png)
 
 ## Implementasi Penggunaan Dashboard Visualisasi
 Hasil dari penyusunan dashboard visualisasi yang sudah diterangkan sebelumnya menjadi seperti ini
-ggggggg
+![hasil](image-procedure/hasil-dashboard.png)
