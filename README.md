@@ -68,7 +68,7 @@ Variabel ini akan divisualisasikan dengan menggunakan *line chart*
 6. Karena pada visualisasi nilai rata-rata jumlah instrumen uang elektronik per-tahun sudah terlihat pada grafik, maka `Axis y` tidak dibutuhkan, lalu `Grid lines` juga tidak diperlukan. Untuk menghilangkan `Axis y` bisa dengan klik kanan pada `Axis y`, lalu pilih tab `Tick Marks`, pada pilihan `Major Tick Marks` pilih `None`. Untuk menghilangkan `Grid lines` bisa dengan klik kanan pada background grafik, lalu pilih `Format`, setelah itu akan muncul tab `Format Lines`, pada `Grid Lines` pilih `None`. Hal ini dilakukan pada `Rows` dan `Columns`.
 7. Jika sudah selesai maka ganti `Title` menjadi "Jumlah Instrumen".    
 Hasilnya menjadi seperti ini   
-gggggg   
+![instrumen](image-rev/inst.png)   
 
 #### Jumlah Instrumen Berdasarkan Media Penyimpan dan Pencatatan Data
 Variabel-variabel ini akan divisualisasikan dengan menggunakan *bar chart*.
@@ -133,8 +133,10 @@ Hasilnya menjadi seperti ini.
 
 ## Penyusunan Dashboard
 Penyusunan dashboard ini ada beberapa visualisasi yang dijadikan ke satu container dan dibuat suatu parameter untuk memilih visualisasi apa yang perlu ditampilkan. Pertama-tama adalah membuat setting-an dashboard pada Tableau seperti ini dan beri nama dashboard, yaitu "Dashboard Visualisasi Pada Statistik Sistem Uang Elektronik Data: Bank Indonesia". Berikut gambar untuk setting dashboard.  
-![setting](image-procedure/setting-dashboard.png)
-
+<p align="center">
+<img src="image-procedure/setting-dashboard.png"> 
+<p>
+  
 ### Jumlah Instrumen dan Penerbit
 Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
 1. Agar dashboard menjadi lebih interaktif, pengguna akan diminta memilih visualisasi apa yang ingin ditampilkan. Agar hal tersebut bisa dilakukan, pada tab `Data` pada pilihan drop down, pilih `Create Parameter`. Tulis
@@ -144,18 +146,25 @@ Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
    Allowable values: List
    ```
    Lalu pada `List of values` tulis `Jumlah Instrumen` dan `Penerbit EMoney`. Lalu klik `OK`. Seperti pada gambar berikut.    
-   ![pilih](image-procedure/parameter-pilih.png)    
+   <p align="center">
+   <img src="image-procedure/parameter-pilih.png"> 
+   <p>    
 2. Pada drop down di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Selected` lalu tulis syntax berikut
    ```
    [Pilih]
    ```
    Dimana [Pilih] adalah nama parameter yang sudah dibuat sebelumnya. Lalu klik `OK`. Seperti gambar berikut.    
-   ![calc](image-procedure/calc-field-pilih.png)     
+   <p align="center">
+    <img src="image-procedure/calc-field-pilih.png">
+   </p>
 3. Lalu drag-and-drop field Selected tersebut ke tab `Filter` baik di `Sheet` Jumlah Instrumen maupun Penerbit EMoney. pada `Sheet` Jumlah Instrumen ketika field Selected di drop ke tab `Filter` akan muncul tab `Edit Filter`. Setelah itu beri checklist pada value yang sesua dengan sheet-nya, dalam kasus ini berarti beli checklist pada value "Jumlah Instrumen". Lakukan hal yang sama pada `Sheet` Penerbit EMoney, yang di checklist adalah value "Penerbit EMoney".
 4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop `sheet` Jumlah Instrumen dan Penerbit EMoney. Agar grafik terlihat, pilih hide title pada grafik.
 5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pili parameter `Pilih`. Lalu pilih `Legends` untuk menampilkan legenda pada visualisasi Variabel Penerbit.
 Hasilnya akan seperti ini.     
-![param-perb](image-procedure/param-penerbit.png)     ggggggg     
+<p align="center">
+<img src="image-procedure/param-penerbit.png">
+<img src="image-rev/param-inst.png">
+</p>
 
 #### Jumlah Instrumen Berdasarkan Media Penyimpan dan Pencatatan Data
 Drag-and-drop visualisasi ini ke posisi yang diinginkan, yaitu pada kasus ini akan diletakkan di samping visualisasi Jumlah Instrumen dan Penerbit.
@@ -176,7 +185,9 @@ Visualisasi dari Variabel Volume dan Nilai untuk setiap transaksi akan dijadikan
    Allowable values: List
    ```
    Lalu pada `List of values` tulis `Initial (pengisian pertama kali)`, `Redeem`, `Reload/Top Up`, `Tarik Tunai`, `Transfer Antar EMoney`, dan `Belanja`. Lalu klik `OK`. Seperti pada gambar berikut.    
-   ![param-trans](image-procedure/parameter-transaksi.png)    
+   <p align="center">
+   <img src="image-procedure/parameter-transaksi.png">
+   </p>
 2. Pada drop down di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Transaction` lalu tulis syntax berikut
    ```
    [Pilih Transaksi]
@@ -191,4 +202,5 @@ Hasilnya akan seperti ini.
 
 ## Implementasi Penggunaan Dashboard Visualisasi
 Hasil dari penyusunan dashboard visualisasi yang sudah diterangkan sebelumnya menjadi seperti ini
-![hasil](image-procedure/hasil-dashboard.png)
+![hasil](image-rev/hasil.png)   
+Link untuk menuju ke [hasil dashboard visualisasi](https://public.tableau.com/views/uangelektronikfindefault/Pendahuluan?:language=en-US&:display_count=n&:origin=viz_share_link) 
