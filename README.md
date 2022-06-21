@@ -211,4 +211,4 @@ Hal-hal yang perlu diperhatikan dalam menggunakan dashboard visualisasi tersebut
 3. Tampilan hasil dashboard visualisasi seperti yang ada pada gambar yang sudah dilampirkan. Namun, karena satu atau lain hal, ketika *link* diakses ada beberapa perubahan visualisasi menjadi tidak sesuai dengan yang terlihat pada gambar.    
 
 Salah satu cara untuk membuka visualisasi agar sesuai dengan gambar yang terlampir adalah    
-Akses link, lalu gulir ke bawah, dimana terdapat icon `Desktop Layout`, lalu setelah berubah ke desktop layout, pilih icon `Full Screen` dengan begitu hasilnya dapat sesuai dengan gambar yang dilampirkan. Atau bisa dengan membuka file [html](https://htmlpreview.github.io/hasil-dashboard-visualisasi.html)
+Akses link, lalu gulir ke bawah, dimana terdapat icon `Desktop Layout`, lalu setelah berubah ke desktop layout, pilih icon `Full Screen` dengan begitu hasilnya dapat sesuai dengan gambar yang dilampirkan. Atau bisa dengan membuka file hasil-dashboard-visualisasi.html
