@@ -50,8 +50,8 @@ Proses visualisasi akan dijelaskan per-variabel
 
 ### Jumlah Instrumen
 Variabel ini akan divisualisasikan dengan menggunakan *line chart*
-1. Drag-and-drop variabel Jumlah Instrument ke `Rows shelf` dan variabel Bulan Tahun ke `Columns shelf`. Setelah itu ubah `Measure` pada Jumlah Instrumen menjadi `Average` dan pada Bulan Tahun pilih `Year` untuk menampilkan data per-tahun.
-2. Biasanya pada tampilan di Tableau, secara otomatis visualisasi akan berbentuk tabel, jadi pada tab `Marks`, pada drop down yang awalnya `Automatic`, ganti menjadi `Line`.
+1. *Drag-and-drop* variabel Jumlah Instrument ke `Rows shelf` dan variabel Bulan Tahun ke `Columns shelf`. Setelah itu ubah `Measure` pada Jumlah Instrumen menjadi `Average` dan pada Bulan Tahun pilih `Year` untuk menampilkan data per-tahun.
+2. Biasanya pada tampilan di Tableau, secara otomatis visualisasi akan berbentuk tabel, jadi pada tab `Marks`, pada *drop down* yang awalnya `Automatic`, ganti menjadi `Line`.
 3. Ubah warna dengan memilih `Color` di tab `Marks`.
 4. Agar semua nilai rata-rata jumlah instrumen uang elektronik per-tahun terlihat pada visualisasi, pada tab `Marks` pilih `Label` dan beri tanda checklist pada kolom `Show mark labels`.
 5. Ketika di *hover* akan muncul tulisan   
@@ -64,7 +64,7 @@ Variabel ini akan divisualisasikan dengan menggunakan *line chart*
    Year of Bulan Tahun:2015  
    Avg.Jumlah Instrumen: 39.8  
    ```
-   Hal tersebut sangat tidak diinginkan. Oleh karena itu, agar tidak muncul seperti itu, pada tab `Marks` pilih `Tooltip` lalu ganti tulisan "Year od Bulan Tahun" menjadi "Tahun" dan "Avg.Jumlah Instrumen" menjadi "Jumlah Instrumen".
+   Hal tersebut sangat tidak diinginkan. Oleh karena itu, agar tidak muncul seperti itu, pada tab `Marks` pilih `Tooltip` lalu ganti tulisan "Year of Bulan Tahun" menjadi "Tahun" dan "Avg.Jumlah Instrumen" menjadi "Jumlah Instrumen".
 6. Karena pada visualisasi nilai rata-rata jumlah instrumen uang elektronik per-tahun sudah terlihat pada grafik, maka `Axis y` tidak dibutuhkan, lalu `Grid lines` juga tidak diperlukan. Untuk menghilangkan `Axis y` bisa dengan klik kanan pada `Axis y`, lalu pilih tab `Tick Marks`, pada pilihan `Major Tick Marks` pilih `None`. Untuk menghilangkan `Grid lines` bisa dengan klik kanan pada background grafik, lalu pilih `Format`, setelah itu akan muncul tab `Format Lines`, pada `Grid Lines` pilih `None`. Hal ini dilakukan pada `Rows` dan `Columns`.
 7. Jika sudah selesai maka ganti `Title` menjadi "Jumlah Instrumen".    
 Hasilnya menjadi seperti ini   
@@ -98,9 +98,9 @@ Hasilnya menjadi seperti ini.
 ### Transaksi
 #### Volume Transaksi
 Pada variabel ini akan dilakukan dua visualisasi, yaitu treemap dan *area chart*. Pada bagian ini akan dijelaskan pembuatan treemap terlebih dahulu.
-1. Drag-and-drop Measure Values pada tab `Marks` di `Color` dan `Size`. Lalu, pada variabel yang sudah di drop pada `Color` dan `Size`, pilih `Edit Filter` dan beri checklist pada seluruh sub-variabel Volume Transaksi, yaitu Volume Transaksi Belanja, *Initial*, Transfer Antar uang Elektronik, *Reload/Top Up*, Tarik Tunai Uang Elektronik, dan *Redeem*. Lalu drag-and-drop Measure Names ke `Label`.
+1. *Drag-and-drop* Measure Values pada tab `Marks` di `Color` dan `Size`. Lalu, pada variabel yang sudah di drop pada `Color` dan `Size`, pilih `Edit Filter` dan beri checklist pada seluruh sub-variabel Volume Transaksi, yaitu Volume Transaksi Belanja, *Initial*, Transfer Antar uang Elektronik, *Reload/Top Up*, Tarik Tunai Uang Elektronik, dan *Redeem*. Lalu drag-and-drop Measure Names ke `Label`.
 2. Pada tableau secara otomatis akan membentuk Treemap. Pada tab `Measure Values`, pada setiap variabel yang sudah di checklist tadi, ubah `Measure` menjadi `Sum`.
-3. Drag-and-drop variabel Bulan Tahun pada tab `Filter`, biasanya akan muncul tab `Edit Filter`, pilih tahun yang ingin ditampilkan lalu klik `OK`. Lalu klik variabel tersebut dan pilih `Show Filter`. Edit `Filter cards` agar pengguna hanya bisa memilih *single values* saja.
+3. *Drag-and-drop* variabel Bulan Tahun pada tab `Filter`, biasanya akan muncul tab `Edit Filter`, pilih tahun yang ingin ditampilkan lalu klik `OK`. Lalu klik variabel tersebut dan pilih `Show Filter`. Edit `Filter cards` agar pengguna hanya bisa memilih *single values* saja.
 4. Ubah warna
 5. Nama-nama yang muncul pada treemap masih belum sesuai, jadi pada variabel Measure Names yang sudah di drop ke `Label`, klik variabel tersebut lalu pilih `Edit Aliases`. Lalu akan muncul tab yang berisi tabel nama variabel nama alias yang akan dimunculkan di grafik. Ganti nama alias agar nama yang muncul pada treemap tidak terlalu panjang namun tetap informatif. Contohnya pada variabel Volume Transaksi Belanja, nama alias diubah menjadi "Volume Belanja", kalau secara *default*, nama alias akan sama dengan nama variabel.
 6. Ubah `Title` menjadi "Volume Transaksi (Ribu Transaksi)".    
@@ -139,7 +139,7 @@ Penyusunan dashboard ini ada beberapa visualisasi yang dijadikan ke satu contain
   
 ### Jumlah Instrumen dan Penerbit
 Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
-1. Agar dashboard menjadi lebih interaktif, pengguna akan diminta memilih visualisasi apa yang ingin ditampilkan. Agar hal tersebut bisa dilakukan, pada tab `Data` pada pilihan drop down, pilih `Create Parameter`. Tulis
+1. Agar dashboard menjadi lebih interaktif, pengguna akan diminta memilih visualisasi apa yang ingin ditampilkan. Agar hal tersebut bisa dilakukan, pada tab `Data` pada pilihan *drop down*, pilih `Create Parameter`. Tulis
    ```
    Name: Pilih        ##Ini akan menjadi nama Parameter    
    Data type: String
@@ -149,7 +149,7 @@ Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
    <p align="center">
    <img src="image-procedure/parameter-pilih.png"> 
    <p>    
-2. Pada drop down di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Selected` lalu tulis syntax berikut
+2. Pada _drop down_ di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Selected` lalu tulis syntax berikut
    ```
    [Pilih]
    ```
@@ -158,7 +158,7 @@ Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
     <img src="image-procedure/calc-field-pilih.png">
    </p>
 3. Lalu drag-and-drop field Selected tersebut ke tab `Filter` baik di `Sheet` Jumlah Instrumen maupun Penerbit EMoney. pada `Sheet` Jumlah Instrumen ketika field Selected di drop ke tab `Filter` akan muncul tab `Edit Filter`. Setelah itu beri checklist pada value yang sesua dengan sheet-nya, dalam kasus ini berarti beli checklist pada value "Jumlah Instrumen". Lakukan hal yang sama pada `Sheet` Penerbit EMoney, yang di checklist adalah value "Penerbit EMoney".
-4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop `sheet` Jumlah Instrumen dan Penerbit EMoney. Agar grafik terlihat, pilih hide title pada grafik.
+4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop `sheet` Jumlah Instrumen dan Penerbit EMoney. Agar grafik terlihat, pilih `Hide Title` pada grafik.
 5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pili parameter `Pilih`. Lalu pilih `Legends` untuk menampilkan legenda pada visualisasi Variabel Penerbit.
 Hasilnya akan seperti ini.     
 <p align="center">
@@ -167,18 +167,18 @@ Hasilnya akan seperti ini.
 </p>
 
 #### Jumlah Instrumen Berdasarkan Media Penyimpan dan Pencatatan Data
-Drag-and-drop visualisasi ini ke posisi yang diinginkan, yaitu pada kasus ini akan diletakkan di samping visualisasi Jumlah Instrumen dan Penerbit.
+*Drag-and-drop* visualisasi ini ke posisi yang diinginkan, yaitu pada kasus ini akan diletakkan di samping visualisasi Jumlah Instrumen dan Penerbit.
 
 ### Volume dan Nilai Transaksi Treemap
 Treemap dari kedua variabel ini akan disandingkan untuk melihat perbedaan volume dan nilai untuk setiap interaksinya.
-1. Drag-and-drop `Sheet` dari visualisasi treemap Volume dan Nilai transaksi. Atur ukuran dan diletakkan sebisa mungkin sejajar.
+1. *Drag-and-drop* `Sheet` dari visualisasi treemap Volume dan Nilai transaksi. Atur ukuran dan diletakkan sebisa mungkin sejajar.
 2. Pada pilihan drop down di kedua grafik tersebut pilih `Legends` dan pilih `Filter` lalu pilih `Year of Bulan Tahun`. Kedua legenda dan filter tersebut diposisikan agar tidak saling tertukar.    
 Hasilnya akan seperti ini    
 ![v-n-treemap](image-procedure/treemap-volume-nilai.png)   
 
 #### Volume dan Nilai Transaksi *Area Chart* dan *Line Chart*
 Visualisasi dari Variabel Volume dan Nilai untuk setiap transaksi akan dijadikan satu.
-1. Agar dashboard menjadi lebih interaktif, pengguna akan diminta memilih visualisasi dari transaksi apa yang ingin ditampilkan. Agar hal tersebut bisa dilakukan, pada tab `Data` pada pilihan drop down, pilih `Create Parameter`. Tulis
+1. Agar dashboard menjadi lebih interaktif, pengguna akan diminta memilih visualisasi dari transaksi apa yang ingin ditampilkan. Agar hal tersebut bisa dilakukan, pada tab `Data` pada pilihan *drop down*, pilih `Create Parameter`. Tulis
    ```
    Name: Pilih Transaksi        ##Ini akan menjadi nama Parameter    
    Data type: String
@@ -188,13 +188,13 @@ Visualisasi dari Variabel Volume dan Nilai untuk setiap transaksi akan dijadikan
    <p align="center">
    <img src="image-procedure/parameter-transaksi.png">
    </p>
-2. Pada drop down di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Transaction` lalu tulis syntax berikut
+2. Pada *drop down* di tab `Data`, pilih `Create Calculated Field`. dan beri nama field tersebut sebagai `Transaction` lalu tulis syntax berikut
    ```
    [Pilih Transaksi]
    ```
    Dimana [Pilih Transaksi] adalah nama parameter yang sudah dibuat sebelumnya. Lalu klik `OK`.
 3. Lalu drag-and-drop field Transaction tersebut ke tab `Filter` baik di seluruh `Sheet` transaksi. Pada `Sheet` transaksi Belanja ketika field Transaction di drop ke tab `Filter` akan muncul tab `Edit Filter`. Setelah itu beri checklist pada value yang sesuai dengan sheet-nya, dalam kasus ini berarti beli checklist pada value "Belanja". Lakukan hal yang sama pada `Sheet` transaksi lainnya.
-4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop seluruh `Sheet` visualisasi transaksi. Agar grafik terlihat, pilih hide title pada grafik.
+4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop seluruh `Sheet` visualisasi transaksi. Agar grafik terlihat, pilih `Hide Title` pada grafik.
 5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pilih parameter `Pilih Transaksi`. Lalu pilih `Legends` untuk menampilkan legenda pada tiap visualisasi transaksi.    
 Hasilnya akan seperti ini.     
 ![trans-1](image-procedure/param-belanja.png) ![trans-2](image-procedure/param-initial.png) ![trans-3](image-procedure/param-redeem.png)
@@ -202,7 +202,7 @@ Hasilnya akan seperti ini.
 
 ## Implementasi Penggunaan Dashboard Visualisasi
 Hasil dari penyusunan dashboard visualisasi yang sudah diterangkan sebelumnya menjadi seperti ini
-![hasil](image-rev/hasil.png)   
+![hasil](Pendahuluan.png)   
 Link untuk menuju ke [hasil dashboard visualisasi](https://public.tableau.com/views/uangelektronikfin/Pendahuluan?:language=en-US&:display_count=n&:origin=viz_share_link)    
 
 Hal-hal yang perlu diperhatikan dalam menggunakan dashboard visualisasi tersebut adalah
