@@ -81,7 +81,7 @@ Variabel-variabel ini akan divisualisasikan dengan menggunakan *bar chart*.
 7. Menghilangkan `Axis y` dan `Grid Lines`.
 8. Ubah `Title` menjadi "Rata-Rata Jumlah Instrumen Berdasarkan Media Penyimpanan dan Pencatatan Data".    
 Hasilnya menjadi seperti ini   
-![perbandingan-instrumen](image-procedure/perb-instrumen.png)
+![perbandingan-instrumen](perb-rev2.png)
 
 ### Penerbit
 Variabel ini akan divisualisasikan menggunakan *line chart*, bedanya dengan visualisasi variabel Jumlah Instrumen adalah, pada variabel ini akan ada *dual line chart* dari sub-variabel penerbit uang elektronik dari Bank Umum dan Lembaga Selain Bank/LSB.
@@ -162,7 +162,7 @@ Visualisasi dari Variabel Jumlah Instrumen dan Penerbit dijadikan satu.
 5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pili parameter `Pilih`. Lalu pilih `Legends` untuk menampilkan legenda pada visualisasi Variabel Penerbit.
 Hasilnya akan seperti ini.     
 <p align="center">
-<img src="image-procedure/param-penerbit.png">
+<img src="param-pnrbit-rev2.png">
 <img src="image-rev/param-inst.png">
 </p>
 
