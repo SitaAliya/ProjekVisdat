@@ -35,7 +35,7 @@ Data awal berbentuk seperti ini
 ![table-before](image-prep/table-before.png)
 Lalu dilakukan transformasi tabel menjadi seperti ini  
 ![table-after](image-prep/table-after.png)
-Setelah tabel berhasil di transformasi, maka data di export ke Tableau. Namun ketika pertama kali di export ternyata tipe data yag terdetekti oleh Tableau tidak sesuai yang diinginkan, yang seharusnya tipe data numerik justru terbaca menjadi tipe data kategori. Oleh karena itu dilakukan perubahan tipe data di Tableau, dan data yang sudah diubah tipe datanya di drag-and-drop ke bagian numerik.     
+Setelah tabel berhasil di transformasi, dilakukan penghapusan *missing value*, jadi akan ada beberapa variabel yang tidak digunakan dan visualisasi pada tahun lampau tidak bisa ditampilkan. Setelah itu data di export ke Tableau. Namun ketika pertama kali di export ternyata tipe data yag terdeteksi oleh Tableau tidak sesuai yang diinginkan, yang seharusnya tipe data numerik justru terbaca menjadi tipe data kategori. Oleh karena itu dilakukan perubahan tipe data di Tableau, dan data yang sudah diubah tipe datanya di *drag-and-drop* ke bagian numerik.     
 Awalnya seperti ini  
 <p align="center">
 <img src="image-prep/datatype-before.png"> 
@@ -103,7 +103,7 @@ Pada variabel ini akan dilakukan dua visualisasi, yaitu treemap dan *area chart*
 3. Drag-and-drop variabel Bulan Tahun pada tab `Filter`, biasanya akan muncul tab `Edit Filter`, pilih tahun yang ingin ditampilkan lalu klik `OK`. Lalu klik variabel tersebut dan pilih `Show Filter`. Edit `Filter cards` agar pengguna hanya bisa memilih *single values* saja.
 4. Ubah warna
 5. Nama-nama yang muncul pada treemap masih belum sesuai, jadi pada variabel Measure Names yang sudah di drop ke `Label`, klik variabel tersebut lalu pilih `Edit Aliases`. Lalu akan muncul tab yang berisi tabel nama variabel nama alias yang akan dimunculkan di grafik. Ganti nama alias agar nama yang muncul pada treemap tidak terlalu panjang namun tetap informatif. Contohnya pada variabel Volume Transaksi Belanja, nama alias diubah menjadi "Volume Belanja", kalau secara *default*, nama alias akan sama dengan nama variabel.
-6. Ubah `Title` menjadi "Volume Transaksi (Ribu Transaksi)".
+6. Ubah `Title` menjadi "Volume Transaksi (Ribu Transaksi)".    
 Hasilnya akan menjadi seperti ini.    
 ![v-treemap](image-procedure/volume-treemap.png)  
 
@@ -114,7 +114,7 @@ Pada variabel ini akan dilakukan visualisasi treemap dan *line chart*. Pada bagi
 3. Langkah ke-3 sampai 4 sama seperti yang sebelumnya.
 4. Langkah ke-3 sampai 4 sama seperti yang sebelumnya.
 5. Pada langkah ini juga dilakukan `Edit Aliases`. Contohnya pada variabel Nilai Transaksi Belanja secara *default* alias nya juga akan bernama Nilai Transaksi Belanja. Jadi aliasnya agar lebih singkat diganti menjadi "Nilai Belanja".
-6. Ubah `Title` menjadi "Nilai Transaksi (Milliar Rp)".
+6. Ubah `Title` menjadi "Nilai Transaksi (Milliar Rp)".    
 Hasilnya akan menjadi seperti ini.   
 ![n-treemap](image-procedure/nilai-treemap.png)    
 
@@ -172,7 +172,7 @@ Drag-and-drop visualisasi ini ke posisi yang diinginkan, yaitu pada kasus ini ak
 ### Volume dan Nilai Transaksi Treemap
 Treemap dari kedua variabel ini akan disandingkan untuk melihat perbedaan volume dan nilai untuk setiap interaksinya.
 1. Drag-and-drop `Sheet` dari visualisasi treemap Volume dan Nilai transaksi. Atur ukuran dan diletakkan sebisa mungkin sejajar.
-2. Pada pilihan drop down di kedua grafik tersebut pilih `Legends` dan pilih `Filter` lalu pilih `Year of Bulan Tahun`. Kedua legenda dan filter tersebut diposisikan agar tidak saling tertukar.
+2. Pada pilihan drop down di kedua grafik tersebut pilih `Legends` dan pilih `Filter` lalu pilih `Year of Bulan Tahun`. Kedua legenda dan filter tersebut diposisikan agar tidak saling tertukar.    
 Hasilnya akan seperti ini    
 ![v-n-treemap](image-procedure/treemap-volume-nilai.png)   
 
@@ -195,7 +195,7 @@ Visualisasi dari Variabel Volume dan Nilai untuk setiap transaksi akan dijadikan
    Dimana [Pilih Transaksi] adalah nama parameter yang sudah dibuat sebelumnya. Lalu klik `OK`.
 3. Lalu drag-and-drop field Transaction tersebut ke tab `Filter` baik di seluruh `Sheet` transaksi. Pada `Sheet` transaksi Belanja ketika field Transaction di drop ke tab `Filter` akan muncul tab `Edit Filter`. Setelah itu beri checklist pada value yang sesuai dengan sheet-nya, dalam kasus ini berarti beli checklist pada value "Belanja". Lakukan hal yang sama pada `Sheet` transaksi lainnya.
 4. Pada tab `Objects`, drag-and-drop container `Vertical` ke dashboard. Tekan `shift` sambil drag-and-drop seluruh `Sheet` visualisasi transaksi. Agar grafik terlihat, pilih hide title pada grafik.
-5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pilih parameter `Pilih Transaksi`. Lalu pilih `Legends` untuk menampilkan legenda pada tiap visualisasi transaksi.
+5. Klik pada tanda panah ke bawah, pilih `Parameters` lalu pilih parameter yang ingin ditampilkan, pada bagian ini berarti pilih parameter `Pilih Transaksi`. Lalu pilih `Legends` untuk menampilkan legenda pada tiap visualisasi transaksi.    
 Hasilnya akan seperti ini.     
 ![trans-1](image-procedure/param-belanja.png) ![trans-2](image-procedure/param-initial.png) ![trans-3](image-procedure/param-redeem.png)
 ![trans-4](image-procedure/param-reload.png) ![trans-5](image-procedure/param-tarik.png) ![trans-6](image-procedure/param-transfer.png)
@@ -203,4 +203,8 @@ Hasilnya akan seperti ini.
 ## Implementasi Penggunaan Dashboard Visualisasi
 Hasil dari penyusunan dashboard visualisasi yang sudah diterangkan sebelumnya menjadi seperti ini
 ![hasil](image-rev/hasil.png)   
-Link untuk menuju ke [hasil dashboard visualisasi](https://public.tableau.com/views/uangelektronikfindefault/Pendahuluan?:language=en-US&:display_count=n&:origin=viz_share_link) 
+Link untuk menuju ke [hasil dashboard visualisasi](https://public.tableau.com/views/uangelektronikfin/Pendahuluan?:language=en-US&:display_count=n&:origin=viz_share_link)    
+
+Hal-hal yang perlu diperhatikan dalam menggunakan dashboard visualisasi tersebut adalah
+1. Karena ada pengapusan *missing value*, khususnya pada data-data lampau, karena memang pada datanya tidak tersedia, jadi ada beberapa visualisasi dengan opsi filter tahun yang ketika dipilih untuk tahun lampau, contohnya 2009, tidak akan ada visualisasi yang keluar. Karena datanya tidak ada namun dalam filter tahunnya masih ada.
+2. Pada *dual chart* variabel volume dan nilai transaksi, variabel nilai transaksi tidak terlalu terlihat kenaikan dan penurunannya seiring waktu. Hal ini karena ada perbedaan satuan pada data dan nominal yang dituliskan pada dat juga berbeda.
